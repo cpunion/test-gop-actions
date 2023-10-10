@@ -1,0 +1,10 @@
+package main
+
+import "testing"
+
+func TestFoo(t *testing.T) {
+	t.Parallel()
+	if Foo() != 1 {
+		t.Fatal("Foo() != 1")
+	}
+}
